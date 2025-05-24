@@ -3,10 +3,17 @@ services:
     name: n8n
     env: docker
     plan: free
-    image:
-      url: n8nio/n8n
+    branch: main
+    repo: https://github.com/Vlad000555/n8n
+    dockerfilePath: Dockerfile
     envVars:
       - key: WEBHOOK_TUNNEL_URL
-        value: https://ed9c-2001-8004-2798-14b4-25d0-df08-922f-3a2d.ngrok-free.app
+        value: https://n8n-1-vgdz.onrender.com
       - key: VUE_APP_URL
-        value: https://ed9c-2001-8004-2798-14b4-25d0-df08-922f-3a2d.ngrok-free.app
+        value: https://n8n-1-vgdz.onrender.com
+      - key: N8N_HOST
+        value: n8n-1-vgdz.onrender.com
+      - key: N8N_PROTOCOL
+        value: https
+      - key: N8N_PORT
+        value: 443
