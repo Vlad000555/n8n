@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: n8n
+    env: docker
+    plan: free
+    image:
+      url: n8nio/n8n
+    envVars:
+      - key: WEBHOOK_TUNNEL_URL
+        value: https://ed9c-2001-8004-2798-14b4-25d0-df08-922f-3a2d.ngrok-free.app
+      - key: VUE_APP_URL
+        value: https://ed9c-2001-8004-2798-14b4-25d0-df08-922f-3a2d.ngrok-free.app
