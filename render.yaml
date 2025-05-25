@@ -19,3 +19,5 @@ services:
         value: 443
       - key: N8N_GOOGLE_SHEET_OAUTH_SCOPE
         value: https://www.googleapis.com/auth/spreadsheets https://www.googleapis.com/auth/drive.file
+      - key: N8N_DISABLE_PRODUCTION_MAIN_MENU
+        value: "true"
